@@ -23,9 +23,13 @@ while the one receiving it is called the server.
     sudo apt install mysql-server
     sudo mysql_secure_installation
 
+![mysql installation](https://github.com/techbeast911/client-server-architecture-mysql/blob/main/Img/Screenshot%202024-06-11%20100531.png)
+
+
 verify mysql server is running
     sudo systemctl status mysql
 
+![mysql server running](https://github.com/techbeast911/client-server-architecture-mysql/blob/main/Img/Screenshot%202024-06-11%20100621.png)
 
 
 
@@ -62,6 +66,8 @@ in mysql server. For extra security do not allow all ip addresses to reach your 
         bind-address = 0.0.0.0
 
 
+![changing bind address](https://github.com/techbeast911/client-server-architecture-mysql/blob/main/Img/Screenshot%202024-06-11%20102917.png)
+
 
 
     Restart MySQL Service:
@@ -90,3 +96,11 @@ in mysql server. For extra security do not allow all ip addresses to reach your 
 
         mysql -h server-ip -u username -p
 
+![mysql](https://github.com/techbeast911/client-server-architecture-mysql/blob/main/Img/Screenshot%202024-06-11%20105443.png)
+
+
+7) check you have successfully connected to mysql server and can perform sql quesries:
+
+    Show databases;
+
+![show databases](https://github.com/techbeast911/client-server-architecture-mysql/blob/main/Img/Screenshot%202024-06-11%20105536.png)
